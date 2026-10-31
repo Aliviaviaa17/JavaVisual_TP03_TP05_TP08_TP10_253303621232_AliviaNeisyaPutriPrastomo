@@ -1,4 +1,3 @@
-
 # CharacterManager
 
 ## TP5 — Character Manager Sprint #2
@@ -46,7 +45,6 @@ Link Google Docs: [https://docs.google.com/document/d/1StKogg62ViMKlBcTAEO96wD5X
 ### 7. Teknologi
 - Java
 - VS Code
-<<<<<<< HEAD
 - Git dan GitHub
 
 
@@ -93,6 +91,85 @@ membuat program lebih mudah dirawat.
 ### Dokumentasi Analisis TP8
 
 [Google Docs — Analisis GUI dan MVC](https://docs.google.com/document/d/1f-ECuWz--cHbNq6ZMyi9WH1w2WBP8pyJzqAXe657lE8/edit?usp=sharing)
-=======
+
+
+# Character Manager — TP10 (Java Swing & MVC)
+
+Aplikasi desktop untuk menampilkan karakter RPG menggunakan Java Swing. Proyek ini menerapkan konsep PBO, pola MVC, serta tampilan kartu karakter yang dinamis.
+
+## Fitur Utama
+
+- Menampilkan data karakter dalam bentuk kartu.
+- Menggunakan empat role: WARRIOR, MAGE, ARCHER, dan HEALER.
+- Warna kartu berbeda sesuai role karakter.
+- Karakter dengan level minimal 5 mendapat warna emas dan tulisan tebal.
+- Menampilkan rata-rata level karakter.
+- Mengatur warna, font, dan border melalui `AppTheme.java`.
+
+## Arsitektur MVC
+
+- **Model:** `Character.java` dan `CharacterType.java` untuk mengelola data karakter.
+- **View:** `MainWindow.java` untuk menampilkan GUI dan `AppTheme.java` untuk mengatur tema.
+- **Runner:** `Main.java` untuk membuat data dan menjalankan aplikasi.
+
+## Struktur Proyek
+
+```text
+Character Manager/
+└── src/
+    └── com/unpri/charactermanager/
+        ├── Main.java
+        ├── model/
+        │   ├── Character.java
+        │   └── CharacterType.java
+        └── view/
+            ├── AppTheme.java
+            └── MainWindow.java
+```
+
+## Penjelasan Kelas
+
+- `Character.java`: Menyimpan data karakter.
+- `CharacterType.java`: Menentukan role karakter.
+- `AppTheme.java`: Mengatur warna, font, dan border.
+- `MainWindow.java`: Menampilkan kartu karakter menggunakan Java Swing.
+- `Main.java`: Menjalankan aplikasi.
+
+## Hasil Pengujian
+
+Program berhasil menampilkan kartu karakter secara dinamis. Warna kartu menyesuaikan role, karakter dengan level minimal 5 mendapatkan highlight emas, dan rata-rata level ditampilkan pada jendela aplikasi.
+
+## Cara Menjalankan
+
+**Melalui VS Code:**
+1. Buka folder proyek.
+2. Buka `Main.java`.
+3. Klik **Run** atau tekan F5.
+
+**Melalui CMD:**
+
+```cmd
+if not exist out mkdir out
+dir /s /b src\*.java > sources.txt
+javac -encoding UTF-8 -d out @sources.txt
+java -cp out com.unpri.charactermanager.Main
+```
+
+## Teknologi
+
+- Java JDK 25
+- Java Swing dan AWT
+- Visual Studio Code
 - Git dan GitHub
->>>>>>> 1839b646989e05707c098950befb06f2ce90a90e
+
+## Screenshot Output 
+Screenshot sebelum perubahan data
+(<![alt text](before.png)>)
+
+Screenshot sesudah perubahan data
+(<![alt text](after.png)>)
+
+## Google Docs
+
+Laporan analisis praktikum TP10:  
+[https://docs.google.com/document/d/12t3r8PK1Sl63e6IdsUxM0jOVsjiyRlUJoJA3JCYA8aE/edit?usp=sharing]

@@ -1,0 +1,6 @@
+"C:\Users\ASUS\Documents\S3JV\TP05\Character Manager\src\com\unpri\charactermanager\Main.java"
+"C:\Users\ASUS\Documents\S3JV\TP05\Character Manager\src\com\unpri\charactermanager\model\Character.java"
+"C:\Users\ASUS\Documents\S3JV\TP05\Character Manager\src\com\unpri\charactermanager\model\CharacterManager.java"
+"C:\Users\ASUS\Documents\S3JV\TP05\Character Manager\src\com\unpri\charactermanager\model\CharacterType.java"
+"C:\Users\ASUS\Documents\S3JV\TP05\Character Manager\src\com\unpri\charactermanager\view\AppTheme.java"
+"C:\Users\ASUS\Documents\S3JV\TP05\Character Manager\src\com\unpri\charactermanager\view\MainWindow.java"

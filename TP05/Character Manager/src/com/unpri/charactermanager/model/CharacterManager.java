@@ -1,37 +1,14 @@
-
-package com.unpri.charactermanager.manager;
-
-import com.unpri.charactermanager.model.Character;
-import com.unpri.charactermanager.model.CharacterType;
+package com.unpri.charactermanager.model;
 
 import java.util.ArrayList;
-<<<<<<< HEAD
 
 public class CharacterManager {
-
-=======
-import java.util.List;
-import java.util.Objects;
-
-public class CharacterManager {
->>>>>>> 1839b646989e05707c098950befb06f2ce90a90e
     private final ArrayList<Character> characters;
 
     public CharacterManager() {
         characters = new ArrayList<>();
     }
 
-<<<<<<< HEAD
-    public void addCharacter(Character character) {
-        if (character == null) {
-            throw new IllegalArgumentException("Karakter tidak boleh null.");
-        }
-        characters.add(character);
-    }
-
-    public ArrayList<Character> getAllCharacters() {
-        return new ArrayList<>(characters);
-=======
     public boolean addCharacter(Character character) {
         if (character == null) {
             return false;
@@ -68,20 +45,16 @@ public class CharacterManager {
 
         characters.remove(character);
         return true;
->>>>>>> 1839b646989e05707c098950befb06f2ce90a90e
     }
 
     public int getTotalCharacters() {
         return characters.size();
     }
 
-<<<<<<< HEAD
-=======
     public ArrayList<Character> getAllCharacters() {
         return new ArrayList<>(characters);
     }
 
->>>>>>> 1839b646989e05707c098950befb06f2ce90a90e
     public double getAverageLevel() {
         if (characters.isEmpty()) {
             return 0.0;
@@ -99,13 +72,10 @@ public class CharacterManager {
     public ArrayList<Character> findByType(CharacterType type) {
         ArrayList<Character> result = new ArrayList<>();
 
-<<<<<<< HEAD
-=======
         if (type == null) {
             return result;
         }
 
->>>>>>> 1839b646989e05707c098950befb06f2ce90a90e
         for (Character character : characters) {
             if (character.getType() == type) {
                 result.add(character);
@@ -114,8 +84,6 @@ public class CharacterManager {
 
         return result;
     }
-<<<<<<< HEAD
-=======
 
     /**
      * Menghitung jumlah karakter berdasarkan tipe tertentu.
@@ -138,5 +106,4 @@ public class CharacterManager {
 
         return count;
     }
->>>>>>> 1839b646989e05707c098950befb06f2ce90a90e
 }

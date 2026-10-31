@@ -1,0 +1,14 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "C:\\Users\\ASUS\\AppData\\Roaming\\Code\\User\\globalStorage\\pleiades.java-extension-pack-jdk\\java\\21",
+            "default": true
+        },
+        {
+            "name": "JavaSE-17",
+            "path": "C:\\Users\\ASUS\\AppData\\Roaming\\Code\\User\\globalStorage\\pleiades.java-extension-pack-jdk\\java\\17"
+        }
+    ]
+}

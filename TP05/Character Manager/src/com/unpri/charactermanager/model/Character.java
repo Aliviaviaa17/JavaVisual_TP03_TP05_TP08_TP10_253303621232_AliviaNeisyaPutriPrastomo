@@ -1,36 +1,11 @@
-
 package com.unpri.charactermanager.model;
 
-<<<<<<< HEAD
-public class Character {
-
-=======
 import java.util.Objects;
 
 public class Character {
->>>>>>> 1839b646989e05707c098950befb06f2ce90a90e
     private String name;
     private int level;
     private CharacterType type;
-
-<<<<<<< HEAD
-    public Character(String name, int level, CharacterType type) {
-        if (name == null || name.trim().isEmpty()) {
-            throw new IllegalArgumentException("Nama karakter tidak boleh kosong.");
-        }
-
-        if (level < 1) {
-            throw new IllegalArgumentException("Level minimal adalah 1.");
-        }
-
-        if (type == null) {
-            throw new IllegalArgumentException("Tipe karakter harus diisi.");
-        }
-
-        this.name = name;
-        this.level = level;
-        this.type = type;
-=======
     private static int totalCharacterCreated = 0;
 
     public Character(String name, int level, CharacterType type) {
@@ -53,7 +28,6 @@ public class Character {
         );
 
         totalCharacterCreated++;
->>>>>>> 1839b646989e05707c098950befb06f2ce90a90e
     }
 
     public String getName() {
@@ -68,15 +42,6 @@ public class Character {
         return type;
     }
 
-<<<<<<< HEAD
-    public void setLevel(int level) {
-        if (level < 1) {
-            throw new IllegalArgumentException("Level minimal adalah 1.");
-        }
-        this.level = level;
-    }
-
-=======
     public void setName(String name) {
         if (name == null || name.trim().isEmpty()) {
             throw new IllegalArgumentException(
@@ -127,7 +92,6 @@ public class Character {
         return Objects.hash(name);
     }
 
->>>>>>> 1839b646989e05707c098950befb06f2ce90a90e
     @Override
     public String toString() {
         return "Character{name='" + name
