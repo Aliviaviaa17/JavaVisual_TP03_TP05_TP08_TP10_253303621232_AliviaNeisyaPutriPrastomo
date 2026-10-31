@@ -15,15 +15,14 @@ public class Main {
         manager.addCharacter(
                 new Character("Arka", 10, CharacterType.WARRIOR));
         manager.addCharacter(
-                new Character("Nara", 3, CharacterType.MAGE));
+                new Character("Luna", 8, CharacterType.MAGE));
         manager.addCharacter(
-                new Character("Bima", 7, CharacterType.ARCHER));
+                new Character("Raka", 6, CharacterType.WARRIOR));
         manager.addCharacter(
-                new Character("Sinta", 5, CharacterType.HEALER));
+                new Character("Nara", 5, CharacterType.HEALER));
         manager.addCharacter(
-                new Character("Raka", 2, CharacterType.WARRIOR));
-        manager.addCharacter(
-                new Character("Dina", 12, CharacterType.MAGE));
+                new Character("Kirana", 12, CharacterType.ARCHER));
+
 
         SwingUtilities.invokeLater(() -> {
             MainWindow window = new MainWindow(manager);
