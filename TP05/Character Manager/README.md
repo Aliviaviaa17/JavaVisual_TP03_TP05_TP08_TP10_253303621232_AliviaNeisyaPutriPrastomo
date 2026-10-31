@@ -167,7 +167,7 @@ Screenshot sebelum perubahan data
 (<![alt text](before.png)>)
 
 Screenshot sesudah perubahan data
-(<![alt text](after.png)>)
+![alt text](<after.png>)
 
 ## Google Docs
 
